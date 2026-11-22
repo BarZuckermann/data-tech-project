@@ -4,6 +4,8 @@
 
 > Student project, Data & Technology course.
 > **Team:** Shira Rahamim · Bar Zuckermann · Noa Roash
+>
+> **Status:** 🎨 Design complete (PRD + 7 Stitch screens) · 🛠️ MVP app (Expo + Supabase + Claude API) in progress
 
 ---
 
