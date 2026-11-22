@@ -95,7 +95,7 @@
 - User: *"The battery dies after 5 minutes and the motor makes a clicking sound."*
 - AI verdict card: green **Likely covered** pill with a plain-language explanation.
 - **Draft claim letter** card addressed to Dyson Customer Service / Importer, with a formal letter preview.
-- **Copy to clipboard** button and an **Edit draft** link.
+- **Copy to clipboard** button and an **Edit draft** link (no email sending in Phase 1).
 - Disclaimer: "AI-generated draft, not legal advice."
 - Message input: "Describe the problem…"
 
@@ -113,9 +113,22 @@ Screen 1 ── bell ──▶ Screen 5 (Reminders) ── View details ──�
 
 ---
 
-## Generation Status
+## Generation Status (checked 2026-11-22)
 
-| Screen | Status |
-|---|---|
-| 1 — Home Dashboard | ✅ Generated and confirmed |
-| 0, 2, 3, 4, 5, 6 | ⏳ Requests sent. The tool call timed out on Claude's side, but Stitch usually keeps generating. **Check in the Stitch project**, and regenerate any screen that's missing using the spec above. |
+All 7 screens exist in the Stitch project. Each screenshot was reviewed against the spec above.
+
+| Screen | Screen ID | Status |
+|---|---|---|
+| 0 — Legal Terms & Onboarding Gate | `2df0cd4028504cce836898a08ae082b5` | ✅ Matches spec (checkbox + disabled Get Started) |
+| 1 — Home Dashboard | `022ea8fb22a54d7e91cb5752cde5347a` | ✅ Matches spec |
+| 2 — Ingestion Trigger Sheet | `a6a261be971b497b897041aba5e6075c` | ✅ Matches spec |
+| 3 — Scan Preview & Data Verification | `8546be0c10624511a5a29e7687069ff5` | ✏️ Edit sent: receipt changed to Electronics Hub / DEC 02, 2024 / Model SV47 / Serial D15-8X2K-4471 so it matches Screen 4 (it had shown Best Buy, 02/12/2024 and a different serial) |
+| 4 — Product Master Detail View | `35ec7deabcf04d36a39e700b302c59f6` | ✅ Matches spec |
+| 5 — Expiration Reminders Drawer | `0ba6e6367fd9480ba2861f180b37209a` | ✏️ Edit sent: subtitle no longer mentions "renew coverage" (out of MVP scope) |
+| 6 — Warranty AI Assistant & Claim Drafter | `0ac707d81e9246d3a77b464a9e10fe28` | ✏️ Edit sent: removed "Send Email" / "Export PDF" (PRD Phase 1 has no mailbox integration; copy only), removed "98% match", fixed overlapping fade caption |
+
+**Local screenshots:** [`stitch-screens/`](stitch-screens/) contains a PNG of each screen, taken 2026-11-22 *before* the ✏️ edits.
+
+**To confirm the ✏️ edits:** Stitch accepted all three (the project update time changed), but the saved HTML and screenshots still showed the old versions afterward. Open the project in Stitch. If a change isn't visible there, reapply it from the screen's notes in this table.
+
+Other assets in the project: a shield logo (`681f4bb9418d48968389defb0188af1f`), a vacuum product photo (`5bf6956f701249f7a16f1ac209bf146b`) and a clickable prototype, "Covered AI Warranty & Item Vault" (`23247aaadd2b4921a57dd92fd6861e92`).
