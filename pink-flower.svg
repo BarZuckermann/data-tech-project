@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240" role="img" aria-label="Pink flower">
+  <title>Pink flower</title>
+  <!-- stem -->
+  <path d="M100 120 C 96 160, 104 190, 100 235" stroke="#2F5D50" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- leaves -->
+  <path d="M100 185 C 70 170, 55 180, 50 195 C 70 200, 88 196, 100 185 Z" fill="#3E7D6A"/>
+  <path d="M101 205 C 130 190, 146 198, 152 212 C 132 218, 114 214, 101 205 Z" fill="#3E7D6A"/>
+  <!-- petals -->
+  <g transform="translate(100 85)" fill="#F472B6" stroke="#DB2777" stroke-width="2">
+    <ellipse cx="0" cy="-38" rx="20" ry="34"/>
+    <ellipse cx="0" cy="-38" rx="20" ry="34" transform="rotate(60)"/>
+    <ellipse cx="0" cy="-38" rx="20" ry="34" transform="rotate(120)"/>
+    <ellipse cx="0" cy="-38" rx="20" ry="34" transform="rotate(180)"/>
+    <ellipse cx="0" cy="-38" rx="20" ry="34" transform="rotate(240)"/>
+    <ellipse cx="0" cy="-38" rx="20" ry="34" transform="rotate(300)"/>
+  </g>
+  <!-- center -->
+  <circle cx="100" cy="85" r="18" fill="#FBBF24" stroke="#D97706" stroke-width="2"/>
+</svg>
